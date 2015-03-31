@@ -91,23 +91,23 @@ function doubanread(){
                 html += '<h2>正在读...</h2>';
                 for(i=0;i<data.reading.length; i++){
                     obj = data.reading[i];
-                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 500px;">标签：'+obj.tags+'</span>';
+                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 150px;">标签：'+obj.tags+'</span>';
                 }
 
                 //wish
                 html += '<h2>想读...</h2>';
                 for(i=0;i<data.wish.length; i++){
                     obj = data.wish[i];
-                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 500px;">标签：'+obj.tags+'</span>';
+                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 150px;">标签：'+obj.tags+'</span>';
                 }
 
                 //read
                 html += '<h2>已读...</h2>';
                 for(i=0;i<data.read.length; i++){
                     obj = data.read[i];
-                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 500px;">标签：'+obj.tags+'</span>';
+                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 150px;">标签：'+obj.tags+'</span>';
                 }
-                
+
                 $('.post-content').append(html)
             }
         });
