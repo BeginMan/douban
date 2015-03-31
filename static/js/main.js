@@ -91,21 +91,21 @@ function doubanread(){
                 html += '<h2>正在读...</h2>';
                 for(i=0;i<data.reading.length; i++){
                     obj = data.reading[i];
-                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 150px;">标签：'+obj.tags+'</span>';
+                    html += '<li><img src="'+obj.image+'"><a href="'+obj.url+'">《'+obj.title+'》&nbsp;&nbsp;</a><span style="margin-left: 10px;color: #9e9e9e">标签：'+obj.tags+'</span></li>';
                 }
 
                 //wish
                 html += '<h2>想读...</h2>';
                 for(i=0;i<data.wish.length; i++){
                     obj = data.wish[i];
-                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 150px;">标签：'+obj.tags+'</span>';
+                    html += '<li><img src="'+obj.image+'"><a href="'+obj.url+'">《'+obj.title+'》&nbsp;&nbsp;</a><span style="margin-left: 10px;color: #9e9e9e">标签：'+obj.tags+'</span></li>';
                 }
 
                 //read
                 html += '<h2>已读...</h2>';
                 for(i=0;i<data.read.length; i++){
                     obj = data.read[i];
-                    html += '<li><a href="'+obj.url+'">'+obj.title+'</a></li>&nbsp;&nbsp;<span style="float: right; margin-right: 150px;">标签：'+obj.tags+'</span>';
+                    html += '<li><img src="'+obj.image+'"><a href="'+obj.url+'">《'+obj.title+'》&nbsp;&nbsp;</a><span style="margin-left: 10px;color: #9e9e9e">标签：'+obj.tags+'</span></li>';
                 }
 
                 $('.post-content').append(html)
